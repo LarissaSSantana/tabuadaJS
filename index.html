@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>TABUADA</h1>
+    </header>
+
+    <section>
+        <div id="container-form">
+            <div id="form">
+                <div class="column">
+                    <label>Digite um número: </label>
+                    <input type="number" id="num">
+                    <input type="button" value="Enviar" onclick="calc()">
+                </div>
+                <div class="column">
+                    <div class="reload-button" onclick="reload()">
+                        <img src="refresh-icon.svg" id="reload" alt="reload">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="container-res">
+            <div id="res">
+                <div class="txt">
+                    <p id="tab" class="hidden"></p>
+                    <p id="pre-tab">Seu resultado será mostrado aqui.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Larissa Santana | <a href="#">Tutorial</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
